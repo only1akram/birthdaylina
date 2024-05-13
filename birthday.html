@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Lina!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Light pink background */
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative; /* For heart animation positioning */
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #ff4081; /* Pink */
+        }
+
+        .content {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Heart animation */
+        @keyframes heartbeat {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Heart shape animation */
+        .container::before {
+            content: '❤️';
+            display: block;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 36px;
+            animation: heartbeat 1s infinite alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday, rb3 mitrou!</h1>
+        </header>
+        <div class="content">
+            <p>Dear Lina,</p>
+            <p>Even though we've only known each other for a short time, I wanted to take a moment to wish you the happiest of birthdays. You are incredibly pretty, inside and out. Your smile lights up the room and your kindness warms my heart.</p>
+            <p>Here's to many more wonderful days ahead. Have an amazing birthday celebration!</p>
+            <p>With lots of love,</p>
+            <p>Akram</p>
+        </div>
+    </div>
+</body>
+</html>
